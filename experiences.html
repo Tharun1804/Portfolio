@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences - Personal Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/72245d7edf.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <div class="container">
+        <nav>
+            <img src="photos/Tharun1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="work.html">My Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">Experiences</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3 class="intern"><span>Technospice Technologies Pvt. Ltd.</span> </h3>
+                    <p>May 2025 - Present<br>
+                        Software Engineer – Full Stack Developer
+                    </p>
+                    <ul>
+                        <li>Working as a Software Engineer with a focus on Python, Django, Django REST Framework, MySQL, React.js, and AWS.</li>
+                        <li>Developing and maintaining REST APIs, database functionalities, and business applications.</li>
+                        <li>Involved in production deployment and server management using AWS EC2, RDS, Linux, Nginx, Gunicorn, Git, DNS, and SSL/HTTPS.</li>
+                        <li>Also responsible for debugging production issues, database migrations, application enhancements, and deployment support.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @ Tharun</p>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() { sidemenu.style.right = "0"; }
+        function closemenu() { sidemenu.style.right = "-100%"; }
+    </script>
+</body>
+</html>

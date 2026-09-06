@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work - Personal Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/72245d7edf.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <div class="container">
+        <nav>
+            <img src="photos/Tharun1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="work.html">My Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="photos/Project-Manager.jpg">
+                    <div class="layer">
+                        <h3>FULL-STACK ERP SYSTEM</h3>
+                        <p>Apparel Management (Saree Management). React.js, Django, PostgreSQL.</p>
+                        <a href="https://loomapp.in/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="photos/movieDB.jpg">
+                    <div class="layer">
+                        <h3>MOVIE DATABASE</h3>
+                        <p>MOVIE DATABASE USING REACTJS , TAILWIND CSS AND TMDB API</p>
+                        <a href="https://moviedtbase.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @ Tharun</p>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() { sidemenu.style.right = "0"; }
+        function closemenu() { sidemenu.style.right = "-100%"; }
+    </script>
+</body>
+</html>

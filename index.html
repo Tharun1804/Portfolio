@@ -1,256 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css">
     <script src="https://kit.fontawesome.com/72245d7edf.js" crossorigin="anonymous"></script>
 </head>
-
 <body> 
     <div id="header">
         <div class="container">
             <nav>
                 <img src="photos/Tharun1.png" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Experiences</a></li>
-                    <li><a href="#portfolio">My Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <!--<i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="work.html">My Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <!-----<i class="fa-solid fa-bars" onclick="openmenu()" ></i>--->
             </nav>
-            <div class="header-text">
-                <p>FULL STACK DEVELOPER</p>
-                <h1>Hi, I'm <span>THARUN</span><br></h1>
-            </div>
+            <section id="hero">
+                <h1>Tharun K K &ndash; Full Stack Software Engineer</h1>
+                <p>
+                    I am a results-driven full-stack developer with professional experience in backend and frontend development. I specialize in building scalable, production-grade web applications using React.js, Django, PostgreSQL, and AWS.
+                </p>
+                <p>
+                    From designing complex RESTful APIs to deploying robust multi-tenant ERP systems, I build software that solves real-world business problems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="work.html" class="btn">View My Work</a>
+                    <a href="contact.html" class="btn btn2">Contact Me</a>
+                </div>
+            </section>
         </div>
     </div>
-    <!--------------About---------------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="photos/DP.jpg">
-                </div>
-                <div class="about-col-2">
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
-                        <p class="tab-links" onclick="opentab('Personal Info')">Personal Info</p>
-                        <p class="tab-links" onclick="opentab('Interests')">Interests</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="Skills">
-                        <ul>
-                            <li><span><h2>TECHICAL SKILLS</h2></span></li>
-                            <li>PYTHON</li>
-                            <li>SQL</li>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JAVASCRIPT</li>
-                            <li>C++</li>
-                            <li>C</li>
-                            <li>REACT JS (learning)</li>
-                            <li>.NET (learning)</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Education">
-                        <ul>
-                            <li><span><h2>Bannari Amman Institute of Technology, Sathyamangalam</h2></span>
-                                Bachelor of Engineering - ECE <br>
-                                CGPA 7.66 <br>
-                                2020 - 2024 </li>
-                            <li><span><h2>Bannari Amman Vidhya Nikethan Matric Hr.sec.School</h2></span>HSC<br>
-                                Percentage - 75% (2020)</li>
-                            <li><span><h2>Government.Hr.sec.school</h2></span>SSLC<br>
-                                Percentage - 86.6% (2018)</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Personal Info">
-                        <ul>
-                            <li><span><h2>Date of Birth</h2></span>18/04/2003</li>
-                            <li><span><h2>Personal Mail</h2></span>tharunkk2003@gmail.com</li>
-                            <li><span><h2>Languages</h2></span>Tamil,English,Kannada</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Interests">
-                        <ul>
-                            <li><span><h2>INTERESTS</h2></span>Web Devlopment<br>
-                                DBMS<br>Full Stack Development</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="btn">See more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!------------------------SERVICES------------------->
-    <div id="service">
-        <div class="container">
-            <h1 class="sub-title">Experiences</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h3 class="intern"><span>Technospice Technologies Pvt. Ltd.</span> </h3>
-                    <p>May 2025 - Present<br>
-                        Software Engineer – Full Stack Developer
-                    </p>
-                    <ul>
-                        <li>Working as a Software Engineer with a focus on Python, Django, Django REST Framework, MySQL, React.js, and AWS.</li>
-                        <li>Developing and maintaining REST APIs, database functionalities, and business applications.</li>
-                        <li>Involved in production deployment and server management using AWS EC2, RDS, Linux, Nginx, Gunicorn, Git, DNS, and SSL/HTTPS.</li>
-                        <li>Also responsible for debugging production issues, database migrations, application enhancements, and deployment support.</li>
-                    </ul>
-                </div><br>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h3 class="intern"><span>Tessolve Semiconductors Ltd,.</span> </h3>
-                    <p>July 2022 - August 2022<br>
-                        <li>Gained Knowledge in basic Verilog Coding</li>
-                    </p>
-                    </p>
-                    <a class="btn" href="https://www.tessolve.com/" target="_blank"><h2>Learn more</h2></a>
-                </div><br>
-                <div>
-                    <i class="fa-sharp fa-solid fa-code-branch"></i>
-                    <h3 class="intern"><span>Edify Techno Solutions.</span> </h3>
-                    <p>07 Apr 2023 - 24 Apr 2023<br>
-                        <li>Worked on a team for developing IOT devices<br></li>
-                        <li>Gained knowledge in embedded systems</li>
-                    </p>
-                    <a class="btn" href="https://www.edifytech.in/" target="_blank"><h2>Learn More</h2></a>
-                </div><br>
-                <div>
-                    <i class="fa-brands fa-python"></i>
-                    <h3 class="intern"><span>Corizo EduTech</span></h3>
-                    <p>05 October 2024 - 05 November 2024<br></p>
-                        <li>Gained knowledge in Machine Learning</li>
-                        <li>Gained knowledge in Python</li>
-                    <a class="btn" href="https://corizo.in/" target="_blank"><h2>Learn more</h2></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a href="#" class="btn">See more</a>
-    <!------------------------portfolio--------------->
-
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="photos/resumelogo.png">
-                    <div class="layer">
-                        <h3>RESUME</h3>
-                        <p>INFO , SKILLS AND EXPERIENCES</p>
-                        <a href="photos/THARUN-RESUME-DEVELOPER.pdf" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="photos/Project-Manager.jpg">
-                    <div class="layer">
-                        <h3>PROJECT</h3>
-                        <H4><span><B>1. ACCIDENT ALERT SYSTEM USING IOT</B><br><B>2. DESIGN OF CLASS D RF POWER
-                                    AMPLIFIER</B><br>3.FAKE NEWS DETECTION SYSTEM USING MACHINE LEARNING</span></H4><br>
-
-                        <a href="./project.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="photos/patent.png">
-                    <div class="layer">
-                        <h3>PATENT</h3>
-                        <h4><span><B>BIOMETRIC BASED PUBLIC BUS TRAVEL CHARGE GENERATOR</B></span></h4><br>
-                        <a href="./PATENT.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="photos/movieDB.jpg">
-                    <div class="layer">
-                        <h3>MOVIE DATABASE</h3>
-                        <p>MOVIE DATABASE USING REACTJS , TAILWIND CSS AND TMDB API</p>
-                        <a href="https://moviedtbase.netlify.app/" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a><br>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">See more</a>
-        </div>
-    </div>
-    <!------------------------contact------------->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> tharunkk2003@gmail.com</p>
-                    <p><i class="fa-sharp fa-solid fa-phone"></i> 8754233474</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/tharun-kk-b513b4218" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Tharun1804" target="_blank"><i
-                                class="fa-brands fa-square-github"></i></a>
-                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox/FMfcgzGtwqPTTNFnhjSMctMTcVcGVrZC?compose=VpCqJQwDDXNlzNGStmCvFtClJhRrFtgTVPfwGzrpgZfGqtCcVLgRZLnGqfrFflDVGtWCRvB"
-                            target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                    </div>
-                    <a href="photos/THARUN-RESUME-DEVELOPER.pdf" download class="btn btn2" target="_blank">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form action="https://formspree.io/f/xeqwkqgr" method="post">
-
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Mail" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a href="#" class="btn">See more</a>
     <div class="copyright">
         <p>Copyright @ Tharun</p>
     </div>
-    </div>
 
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-
         var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
+        function openmenu() { sidemenu.style.right = "0"; }
+        function closemenu() { sidemenu.style.right = "-100%"; }
     </script>
-
 </body>
-
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Personal Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/72245d7edf.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <div class="container">
+        <nav>
+            <img src="photos/Tharun1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="work.html">My Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> tharunkk2003@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i> 8754233474</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/tharun-kk-b513b4218" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Tharun1804" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox/FMfcgzGtwqPTTNFnhjSMctMTcVcGVrZC?compose=VpCqJQwDDXNlzNGStmCvFtClJhRrFtgTVPfwGzrpgZfGqtCcVLgRZLnGqfrFflDVGtWCRvB" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <a href="photos/THARUN-RESUME-DEVELOPER.pdf" download class="btn btn2" target="_blank">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/xeqwkqgr" method="post">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @ Tharun</p>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() { sidemenu.style.right = "0"; }
+        function closemenu() { sidemenu.style.right = "-100%"; }
+    </script>
+</body>
+</html>
